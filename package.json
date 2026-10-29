@@ -1,0 +1,14 @@
+{
+  "name": "insiders-media-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Insiders Media website with booking backend (Vercel).",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/dev-server.js"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  },
+  "engines": { "node": ">=18" }
+}

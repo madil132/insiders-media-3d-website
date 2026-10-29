@@ -1,0 +1,689 @@
+{
+  "_readme": "Single source for every price, number and claim on the site. Edit values here. Items marked _todo use a stated default and need Adil's confirmation.",
+  "brand": {
+    "name": "Insiders Media",
+    "tagline": "Build Smarter. Scale Faster.",
+    "descriptor": "AI Automation | Voice Agents | Custom Software | Performance Marketing",
+    "email": "insidersmedia.agency@gmail.com",
+    "phone_display": "+92 321 752 9632",
+    "whatsapp": "923217529632",
+    "location": "Lahore, Pakistan",
+    "businesses_consulted": "120+",
+    "consulting_since": "2024"
+  },
+  "booking": {
+    "discovery_minutes": 30,
+    "reply_hours": 2,
+    "n8n_webhook": "",
+    "_todo": "endpoint points at the Vercel function in /api/booking. Email and database settings go in Vercel environment variables, not here.",
+    "endpoint": "/api/booking",
+    "slot_days": 6,
+    "discovery_lead_hours": 2,
+    "consultation_lead_hours": 6
+  },
+  "flags": {
+    "show_consultation_footer_link": true,
+    "payment_mode": "invoice",
+    "show_consultation_in_nav": true,
+    "_note": "show_consultation_in_nav: Adil asked for a Consultation link in the header on Oct 28 2026. This relaxes the original brief (footer link only). Set false to restore the brief."
+  },
+  "consultation": {
+    "price": "$399",
+    "currency": "USD",
+    "session_minutes": 90,
+    "roadmap_days": 3,
+    "credit_days": 30,
+    "cancel_hours": 24,
+    "hold_hours": 24
+  },
+  "availability": {
+    "days": "Mon to Fri",
+    "start": "10:00",
+    "end": "22:00",
+    "utc_offset": 5,
+    "_todo": "DECISION default: 10:00 to 22:00 Pakistan time (UTC+5). Confirm real working hours.",
+    "weekdays": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "iana": "Asia/Karachi"
+  },
+  "counters": [
+    {
+      "label": "Leads Captured",
+      "value": 2847,
+      "decimals": 0,
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "label": "AI Calls Handled",
+      "value": 14320,
+      "decimals": 0,
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "label": "Revenue Recovered",
+      "value": 284,
+      "decimals": 0,
+      "prefix": "$",
+      "suffix": "k"
+    },
+    {
+      "label": "Avg. ROAS",
+      "value": 3.4,
+      "decimals": 1,
+      "prefix": "",
+      "suffix": "x"
+    },
+    {
+      "label": "Cost Per Lead",
+      "value": 41,
+      "decimals": 0,
+      "prefix": "-",
+      "suffix": "%"
+    }
+  ],
+  "stats": [
+    {
+      "label": "Average cost-per-lead reduction",
+      "value": 41,
+      "decimals": 0,
+      "prefix": "",
+      "suffix": "%"
+    },
+    {
+      "label": "Of visitors who left, recovered",
+      "value": 97,
+      "decimals": 0,
+      "prefix": "",
+      "suffix": "%"
+    },
+    {
+      "label": "AI agents on the job",
+      "value": 24,
+      "decimals": 0,
+      "prefix": "",
+      "suffix": "/7"
+    },
+    {
+      "label": "Average ROAS improvement",
+      "value": 3.2,
+      "decimals": 1,
+      "prefix": "",
+      "suffix": "x"
+    }
+  ],
+  "testimonials": [
+    {
+      "tag": "AI",
+      "result": "75% manual dispatch reduction",
+      "quote": "The custom workflow automation cut our manual dispatch coordination time by 75% in the first 30 days. Our dispatchers now handle 3x more shipments with zero overtime.",
+      "name": "Marcus Vance",
+      "role": "CEO",
+      "company": "Apex Logistics",
+      "consultation": false
+    },
+    {
+      "tag": "Lead Capture",
+      "result": "2.1% to 6.8% conversion rate",
+      "quote": "Our inbound lead capture went from 2.1% to 6.8% with identity resolution and automated instant follow-ups. We captured enterprise deals that previously clicked away without a trace.",
+      "name": "Elena Rostova",
+      "role": "VP of Growth",
+      "company": "CloudScale HR",
+      "consultation": false
+    },
+    {
+      "tag": "Ads",
+      "result": "Scaled $15k to $85k/mo @ 4.6x ROAS",
+      "quote": "We scaled Meta and Google ad spend from $15k/mo to $85k/mo while maintaining a 4.6x ROAS with their AI creative testing system. Every dollar spent is backed by real attribution data.",
+      "name": "David Chen",
+      "role": "Founder",
+      "company": "OmniCommerce",
+      "consultation": true
+    },
+    {
+      "tag": "AI",
+      "result": "65% after-hours calls resolved",
+      "quote": "The AI voice agents handle 65% of our patient rescheduling calls after hours without a hitch. Patient satisfaction actually increased, and staff turnover plummeted.",
+      "name": "Sarah Jenkins",
+      "role": "Operations Director",
+      "company": "Vitality Health Clinics",
+      "consultation": false
+    },
+    {
+      "tag": "Dev",
+      "result": "Delivered production portal in 6 weeks",
+      "quote": "They delivered a production SaaS portal in 6 weeks with robust architecture and clean LLM integrations. The engineering discipline was top tier from day one.",
+      "name": "Thomas Miller",
+      "role": "CTO",
+      "company": "PropTech Matrix",
+      "consultation": false
+    },
+    {
+      "tag": "AI",
+      "result": "Roadmap paid for itself in week one",
+      "quote": "The audit gave us total clarity on where we were burning ad budget. The roadmap paid for itself in week one by terminating three broken software subscriptions.",
+      "name": "Rachel Green",
+      "role": "Marketing Lead",
+      "company": "Elevate Financial",
+      "consultation": true
+    },
+    {
+      "tag": "Dev",
+      "result": "Dissected complete client journey",
+      "quote": "Adil's team doesn't just sell software; they dissected our entire client journey before touching a single line of code. They think in systems, not services.",
+      "name": "Julian Kester",
+      "role": "Founder",
+      "company": "StudioKester",
+      "consultation": true
+    },
+    {
+      "tag": "AI",
+      "result": "Zero missed inbound calls",
+      "quote": "Zero missed calls. Inbound calls are answered in 2 seconds, qualified, and booked directly into our PMS. We saw an immediate 38% increase in booked new patient exams.",
+      "name": "Chloe Bennett",
+      "role": "Managing Partner",
+      "company": "Vanguard Dental Partners",
+      "consultation": false
+    },
+    {
+      "tag": "Lead Capture",
+      "result": "$180,000+ abandoned cart recovery",
+      "quote": "Anonymous visitor identification recovered over $180,000 in abandoned carts in 90 days. The automated sequence feels personal and converts without sounding aggressive.",
+      "name": "Tariq Al-Mansoor",
+      "role": "Head of E-Commerce",
+      "company": "Lumina Retail",
+      "consultation": false
+    }
+  ],
+  "_testimonials_format": "{ \"quote\": \"\", \"name\": \"\", \"role\": \"\", \"company\": \"\", \"tag\": \"AI | Ads | Lead Capture | Dev\", \"consultation\": false }. Paste all nine here. The section stays hidden until entries exist.",
+  "video_testimonials": [
+    {
+      "video_url": "",
+      "poster_url": "",
+      "name": "Marcus Vance",
+      "role": "CEO",
+      "company": "Apex Logistics",
+      "result_chip": "Cut no-shows and dispatch delays by 75%",
+      "duration": "1:42"
+    },
+    {
+      "video_url": "",
+      "poster_url": "",
+      "name": "Sarah Jenkins",
+      "role": "Operations Director",
+      "company": "Vitality Health Clinics",
+      "result_chip": "Handled 4,200+ patient calls monthly",
+      "duration": "2:15"
+    },
+    {
+      "video_url": "",
+      "poster_url": "",
+      "name": "David Chen",
+      "role": "Founder",
+      "company": "OmniCommerce",
+      "result_chip": "Scaled paid media with 4.8x ROAS",
+      "duration": "1:58"
+    }
+  ],
+  "_video_format": "{ \"video_url\": \"\", \"poster_url\": \"\", \"name\": \"\", \"role\": \"\", \"company\": \"\", \"result_chip\": \"\", \"duration\": \"\" }. YouTube, Vimeo, Loom or MP4. Empty video_url shows a poster with a Story label and is not clickable.",
+  "outbound_policy_note": "",
+  "founder_photo_url": "",
+  "socials": {
+    "linkedin": "",
+    "instagram": "",
+    "tiktok": "",
+    "facebook": ""
+  },
+  "industries": [
+    "Medical and dental clinics",
+    "Home services",
+    "Auto dealerships",
+    "Restaurants and hospitality",
+    "SaaS and tech startups",
+    "E-commerce brands",
+    "Construction and contracting",
+    "Legal and professional services",
+    "Financial services"
+  ],
+  "technologies": [
+    "Meta",
+    "Google Ads",
+    "YouTube",
+    "OpenAI",
+    "Twilio",
+    "n8n",
+    "Zapier",
+    "Make",
+    "Stripe",
+    "HubSpot",
+    "Supabase",
+    "Airtable",
+    "React",
+    "Vercel"
+  ],
+  "services": [
+    {
+      "id": "ai-automation",
+      "name": "AI & Automation",
+      "shape": "bean",
+      "short": "Chatbots, workflows and integrations that handle follow-up and reporting, so your team does not have to.",
+      "problem": "Your team repeats the same tasks. Follow-up slips. Reports take hours.",
+      "build": [
+        "AI chatbots",
+        "Workflow automation (n8n, Make, Zapier)",
+        "API and systems integration",
+        "Automated follow-up sequences",
+        "AI-powered reporting"
+      ],
+      "use": [
+        "A new lead gets an instant reply and a booked call",
+        "Weekly performance reports assembled and sent on their own",
+        "CRM, email and invoices kept in sync"
+      ],
+      "timeline": "1 to 3 weeks for a first system",
+      "tip": "Automation. The same task, done once, forever."
+    },
+    {
+      "id": "voice-agents",
+      "name": "Voice Agents",
+      "shape": "ball",
+      "short": "AI that answers your calls, books appointments and handles common questions. Outbound agents qualify and follow up on leads.",
+      "problem": "Missed calls are missed revenue, and your staff are tied to the phone.",
+      "build": [
+        "Inbound answering",
+        "Booking and FAQ handling",
+        "Outbound calling for lead qualification and follow-up"
+      ],
+      "use": [
+        "After-hours answering that books the next appointment",
+        "Instant answers to the questions you hear every day",
+        "Follow-up calls to leads that went quiet"
+      ],
+      "timeline": "2 to 4 weeks to go live",
+      "tip": "Voice agents answer, book and follow up."
+    },
+    {
+      "id": "custom-software",
+      "name": "Custom Software",
+      "shape": "cube",
+      "short": "SaaS platforms, web apps, portals and internal tools, built on a clean backend.",
+      "problem": "Off-the-shelf tools do not fit the way you work.",
+      "build": [
+        "SaaS platforms",
+        "Web apps and portals",
+        "Internal tools",
+        "AI tools on large language models",
+        "B2B websites",
+        "Backend and database architecture"
+      ],
+      "use": [
+        "A client portal that replaces email threads",
+        "An internal dashboard your team actually opens",
+        "An AI tool that drafts from your own documents"
+      ],
+      "timeline": "6 to 12 weeks, depending on scope",
+      "tip": "Custom software, built around how you work."
+    },
+    {
+      "id": "performance-marketing",
+      "name": "AI-Assisted Performance Marketing",
+      "shape": "drop",
+      "short": "Meta, Google and YouTube campaigns where AI supports creative testing, audience analysis and budget optimization.",
+      "problem": "Ad spend goes up, results do not, and nobody can say why.",
+      "build": [
+        "Meta, Google and YouTube campaigns",
+        "AI-supported creative testing",
+        "Audience analysis",
+        "Budget optimization",
+        "Reporting with full-funnel attribution"
+      ],
+      "use": [
+        "Many creatives tested fast, with the losers cut early",
+        "Budget moved toward the audiences that book calls",
+        "One report that ties ad spend to revenue"
+      ],
+      "timeline": "Campaigns live in about 2 weeks, then ongoing optimization",
+      "tip": "AI helps test more, faster. People make the calls."
+    },
+    {
+      "id": "lead-capture",
+      "name": "Lead Capture & Identity Resolution",
+      "shape": "pebble",
+      "short": "Identify anonymous visitors and follow up by SMS and email. The capture system that pairs with your ads.",
+      "problem": "Most visitors leave without a trace, and the ad spend that brought them is gone.",
+      "build": [
+        "Anonymous visitor identification",
+        "Automated SMS and email follow-up",
+        "Behavioral segmentation",
+        "CRM sync",
+        "Revenue recovery reporting"
+      ],
+      "use": [
+        "A visitor who left the pricing page gets a timely follow-up",
+        "Segments built from what people actually did",
+        "A report showing revenue won back"
+      ],
+      "timeline": "1 to 2 weeks to set up",
+      "tip": "Capture the visitors your ads already paid for."
+    }
+  ],
+  "_timeline_todo": "DECISION default: timelines above are working defaults. Confirm each with Adil.",
+  "method": [
+    {
+      "name": "Audit",
+      "text": "We map how your business runs today: calls, leads, follow-up, tools and reporting. We find where time and revenue leak.",
+      "out": "You get a clear map of what is broken and what it costs."
+    },
+    {
+      "name": "Architect",
+      "text": "We design the system and choose the tools. You see the plan, the order of work and the quote before we build.",
+      "out": "You get a plan, a sequence and a scope."
+    },
+    {
+      "name": "Build",
+      "text": "We build it and connect it to the tools you already use. One team handles strategy, code and integrations.",
+      "out": "You get a working system, not a prototype."
+    },
+    {
+      "name": "Optimize",
+      "text": "We track results against your goals and keep tuning the system as the numbers come in.",
+      "out": "You get reports and steady improvement."
+    }
+  ],
+  "finder": [
+    {
+      "id": "calls",
+      "label": "We miss calls",
+      "services": [
+        "voice-agents",
+        "ai-automation"
+      ]
+    },
+    {
+      "id": "cold",
+      "label": "Leads go cold",
+      "services": [
+        "ai-automation",
+        "lead-capture"
+      ]
+    },
+    {
+      "id": "manual",
+      "label": "Too much manual work",
+      "services": [
+        "ai-automation",
+        "custom-software"
+      ]
+    },
+    {
+      "id": "ads",
+      "label": "Ads cost too much",
+      "services": [
+        "performance-marketing",
+        "lead-capture"
+      ]
+    },
+    {
+      "id": "visitors",
+      "label": "Visitors leave without a trace",
+      "services": [
+        "lead-capture",
+        "performance-marketing"
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "Our tools do not fit",
+      "services": [
+        "custom-software",
+        "ai-automation"
+      ]
+    }
+  ],
+  "demo": [
+    {
+      "id": "book",
+      "label": "Booking a visit",
+      "sub": "Inbound call",
+      "title": "Inbound call, new appointment",
+      "lines": [
+        {
+          "who": "sys",
+          "text": "Call received at 7:42 PM, after hours"
+        },
+        {
+          "who": "them",
+          "name": "Caller",
+          "text": "Hi, I need to book a cleaning for next week."
+        },
+        {
+          "who": "alex",
+          "name": "Alex",
+          "text": "Of course. I can help with that. Are you a new or existing patient?"
+        },
+        {
+          "who": "them",
+          "name": "Caller",
+          "text": "Existing. My name is Sarah Lee."
+        },
+        {
+          "who": "alex",
+          "name": "Alex",
+          "text": "Thanks, Sarah. I have Tuesday at 10:30 or Thursday at 2:00. Which suits you?"
+        },
+        {
+          "who": "them",
+          "name": "Caller",
+          "text": "Thursday works."
+        },
+        {
+          "who": "alex",
+          "name": "Alex",
+          "text": "Booked for Thursday at 2:00. A confirmation text is on its way. Anything else?"
+        },
+        {
+          "who": "them",
+          "name": "Caller",
+          "text": "No, that is all. Thanks."
+        },
+        {
+          "who": "sys",
+          "text": "Appointment added to the calendar. Front desk notified."
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "label": "Answering a question",
+      "sub": "Inbound call",
+      "title": "Inbound call, common question",
+      "lines": [
+        {
+          "who": "sys",
+          "text": "Call received on a Sunday"
+        },
+        {
+          "who": "them",
+          "name": "Caller",
+          "text": "Are you open on Saturdays?"
+        },
+        {
+          "who": "alex",
+          "name": "Alex",
+          "text": "Yes. Saturday hours are 9 to 1. Would you like me to book you in?"
+        },
+        {
+          "who": "them",
+          "name": "Caller",
+          "text": "Not yet. Do you take walk-ins?"
+        },
+        {
+          "who": "alex",
+          "name": "Alex",
+          "text": "We take walk-ins when there is space, but a booking guarantees your time. I can text you the booking link."
+        },
+        {
+          "who": "them",
+          "name": "Caller",
+          "text": "Yes please."
+        },
+        {
+          "who": "sys",
+          "text": "Booking link sent. Call summary saved."
+        }
+      ]
+    },
+    {
+      "id": "lead",
+      "label": "Following up a lead",
+      "sub": "Website enquiry",
+      "title": "Website enquiry, instant follow-up",
+      "lines": [
+        {
+          "who": "sys",
+          "text": "New form submission: Mark, kitchen remodel quote"
+        },
+        {
+          "who": "alex",
+          "name": "Alex by text",
+          "text": "Hi Mark, thanks for reaching out. I can get you a quote this week. Are mornings or afternoons better for a call?"
+        },
+        {
+          "who": "them",
+          "name": "Mark",
+          "text": "Afternoons."
+        },
+        {
+          "who": "alex",
+          "name": "Alex by text",
+          "text": "Booked: Wednesday at 3:00 PM. You will get a reminder the day before."
+        },
+        {
+          "who": "sys",
+          "text": "Lead logged in the CRM with source and notes"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How does the free discovery call work?",
+      "a": "It is a 30 minute conversation about what you want to build. There is no price, no deposit and no sales script. You fill in a short project brief, pick a time, and we talk."
+    },
+    {
+      "q": "How long do projects take?",
+      "a": "It depends on scope. A single automation can be live in a few weeks. A custom platform takes longer. After the discovery call you get a clear scope, timeline and quote."
+    },
+    {
+      "q": "What do you need from me?",
+      "a": "A clear picture of the problem, access to the tools you use today and one person who can make decisions. We handle the rest."
+    },
+    {
+      "q": "Who builds it?",
+      "a": "Our in-house team. Strategy, engineering and campaigns sit under one roof, so nothing gets lost between agencies."
+    },
+    {
+      "q": "How do you measure results?",
+      "a": "Against numbers you set at the start: leads, booked calls, cost per lead, revenue recovered and return on ad spend. You see them in regular reports."
+    }
+  ],
+  "agenda": [
+    {
+      "time": "0 to 15 min",
+      "title": "Your business and goals",
+      "minutes": 15,
+      "desc": "What you sell, who buys, and what a good year looks like."
+    },
+    {
+      "time": "15 to 45 min",
+      "title": "Process map and bottlenecks",
+      "minutes": 30,
+      "desc": "We trace how leads, calls and work move through the business, and mark where they stall."
+    },
+    {
+      "time": "45 to 70 min",
+      "title": "AI opportunities, ranked by impact and effort",
+      "minutes": 25,
+      "desc": "Every opportunity scored, so the first build is the one that pays back fastest."
+    },
+    {
+      "time": "70 to 90 min",
+      "title": "Roadmap and next steps",
+      "minutes": 20,
+      "desc": "A sequenced plan for the next 90 days, and what to leave alone."
+    }
+  ],
+  "deliverables": [
+    {
+      "title": "Business process map",
+      "text": "How work, leads and calls move through your business today."
+    },
+    {
+      "title": "Ranked opportunity list",
+      "text": "Every AI opportunity scored by impact versus effort."
+    },
+    {
+      "title": "AI readiness assessment",
+      "text": "Where your data, tools and team stand right now."
+    },
+    {
+      "title": "90-day implementation roadmap",
+      "text": "What to do, and in what order, over the next 90 days."
+    },
+    {
+      "title": "ROI estimate",
+      "text": "What each priority is likely to return against its cost."
+    },
+    {
+      "title": "Vendor-neutral tool recommendations",
+      "text": "The right tools for your size and stack, with no reseller bias."
+    }
+  ],
+  "price_includes": [
+    "{{consultation.session_minutes}}-minute live session with Adil Nazir",
+    "Written roadmap within {{consultation.roadmap_days}} business days",
+    "All six deliverables",
+    "{{consultation.price}} credited in full toward any build signed within {{consultation.credit_days}} days",
+    "Free reschedule or cancellation up to {{consultation.cancel_hours}} hours before"
+  ],
+  "consultation_faqs": [
+    {
+      "q": "Can I not just ask ChatGPT?",
+      "a": "You can, and it helps with ideas. It cannot see your operations, your numbers or your team. This session starts from how your business actually runs, then ranks the opportunities by impact and effort."
+    },
+    {
+      "q": "Do I have to hire you to build?",
+      "a": "No. The roadmap and tool recommendations are vendor-neutral. You can build with us, with someone else or in-house."
+    },
+    {
+      "q": "Is the {{consultation.price}} credited?",
+      "a": "Yes. It is credited in full toward any build signed within {{consultation.credit_days}} days."
+    },
+    {
+      "q": "How do I pay?",
+      "a": "By invoice, emailed to you as soon as you book, usually within moments. It shows payment details for your region. Your slot is held for {{consultation.hold_hours}} hours and confirmed once payment is received. If the invoice is not paid in that time, the slot is released."
+    },
+    {
+      "q": "How long is the session?",
+      "a": "{{consultation.session_minutes}} minutes, live with Adil. Your written roadmap follows within {{consultation.roadmap_days}} business days."
+    },
+    {
+      "q": "What should I prepare?",
+      "a": "Think about your biggest bottleneck, the tools you use now and your main goal for the next 12 months. A 10-minute intake form after payment collects the rest."
+    }
+  ],
+  "proof": {
+    "label": "Verified Client Story",
+    "title": "Hear it from our clients",
+    "sub": "Hear directly from operators and founders scaling operations with our AI automation workflows and voice architecture.",
+    "cta_title": "Achieve similar results for your business",
+    "cta_sub": "Schedule your free {{booking.discovery_minutes}}-minute discovery call to evaluate system requirements and timelines."
+  },
+  "_video_note": "Add video_url (YouTube, Vimeo, Loom or MP4) to each entry to make its card playable. A fourth slot is supported: add one more entry."
+}
