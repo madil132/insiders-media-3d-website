@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Insiders Media | Build Smarter. Scale Faster.</title>
+<meta name="description" content="We audit how your business runs, then build the AI systems, voice agents, software and performance marketing that make it run smarter.">
+<link rel="canonical" href="https://insidersmedia.xyz/">
+<meta property="og:title" content="Insiders Media | Build Smarter. Scale Faster.">
+<meta property="og:description" content="AI systems, voice agents, custom software and performance marketing, built around how your business runs.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://insidersmedia.xyz/">
+<meta property="og:image" content="https://insidersmedia.xyz/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#050506">
+<link rel="icon" href="/assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=DM+Sans:wght@300;400;500&family=Michroma&display=swap">
+<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+<a class="sr" href="#main" id="skip">Skip to content</a>
+
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="logo" href="#home" aria-label="Insiders Media, home"><img src="/assets/img/logo-white.png" alt="Insiders Media" width="97" height="30"></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#services" data-nav="services">Services</a>
+      <a href="#results" data-nav="results">Results</a>
+      <a href="#about" data-nav="about">About</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+      <a href="#consultation" data-nav="consultation" data-flag="show_consultation_in_nav">Consultation</a>
+    </nav>
+    <div class="hdr-cta">
+      <a class="btn solid" href="#start" data-track="cta_click_path_a">Book a Free Discovery Call</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menuPanel">Menu</button>
+    </div>
+  </div>
+  <div class="menu-panel" id="menuPanel" hidden>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#results">Results</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#consultation" data-flag="show_consultation_in_nav">Consultation</a>
+    <a class="btn solid" href="#start" data-track="cta_click_path_a">Book a Free Discovery Call</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HOME -->
+<div class="view" data-view="home" data-title="Insiders Media | AI Systems and Performance Growth">
+  <section class="hero" aria-labelledby="h1-home">
+    <div class="hero-main">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="chk" aria-hidden="true"></span><span>{{brand.descriptor}}</span></p>
+        <h1 id="h1-home" tabindex="-1">Build Smarter.<br>Scale Faster.</h1>
+        <p class="sub">We audit how your business runs, then build the AI systems, voice agents, software and marketing that make it run smarter.</p>
+        <div class="cta-row">
+          <a class="btn solid xl" id="heroCta" href="#start" data-track="cta_click_path_a">Book a Free Discovery Call</a>
+          <a class="link" href="#results">See our results</a>
+        </div>
+        <p class="fine">{{booking.discovery_minutes}} minutes. Free. No payment, no deposit.</p>
+      </div>
+      <div class="stage-col">
+        <div class="stage"><canvas id="hero" role="img" aria-label="Alex, an animated chrome mascot. It follows your cursor and changes mood. Click it to make it laugh."></canvas></div>
+        <div class="moods" role="group" aria-label="Change Alex's mood">
+          <button class="mood" type="button" data-mood="listen" aria-pressed="false">Listen</button>
+          <button class="mood" type="button" data-mood="think" aria-pressed="false">Think</button>
+          <button class="mood" type="button" data-mood="work" aria-pressed="false">Work</button>
+          <button class="mood" type="button" data-mood="celebrate" aria-pressed="false">Celebrate</button>
+          <button class="mood" type="button" data-mood="sleep" aria-pressed="false">Sleep</button>
+          <button class="mood" type="button" id="moreBtn" aria-expanded="false" aria-controls="moreMoods">More moods</button>
+        </div>
+        <div class="moods" id="moreMoods" role="group" aria-label="More moods" hidden>
+          <button class="mood" type="button" data-mood="happy" aria-pressed="false">Happy</button>
+          <button class="mood" type="button" data-mood="curious" aria-pressed="false">Curious</button>
+          <button class="mood" type="button" data-mood="searching" aria-pressed="false">Searching</button>
+          <button class="mood" type="button" data-mood="proud" aria-pressed="false">Proud</button>
+          <button class="mood" type="button" data-mood="playful" aria-pressed="false">Playful</button>
+          <button class="mood" type="button" data-mood="shy" aria-pressed="false">Shy</button>
+          <button class="mood" type="button" data-mood="suspicious" aria-pressed="false">Suspicious</button>
+          <button class="mood" type="button" data-mood="bored" aria-pressed="false">Bored</button>
+          <button class="mood" type="button" data-mood="sad" aria-pressed="false">Sad</button>
+          <button class="mood" type="button" data-mood="angry" aria-pressed="false">Annoyed</button>
+          <button class="mood" type="button" data-mood="scared" aria-pressed="false">Scared</button>
+        </div>
+        <p class="say" id="say" aria-live="polite"></p>
+      </div>
+    </div>
+    <div class="live"><span class="pulse" aria-hidden="true"></span><span class="lbl">Systems Live</span><span class="lbl" style="color:var(--muted)">All systems operational</span></div>
+    <div class="counters" id="counters" data-tip="Leads, calls, revenue, ROAS and cost per lead. These are the numbers we track." data-mood="idle"></div>
+  </section>
+
+  <section id="home-services" aria-labelledby="h-svc" data-tip="Five services, one team. Open a card to read more." data-mood="idle">
+    <div class="head">
+      <div><p class="eyebrow"><span class="chk" aria-hidden="true"></span>What we build</p><h2 class="big" id="h-svc">Our services</h2></div>
+      <a class="link" href="#services">All services</a>
+    </div>
+    <div class="svc-grid" id="homeServices"></div>
+  </section>
+
+  <section aria-labelledby="h-find" data-tip="Tell me what hurts. I will point to a starting place." data-mood="curious">
+    <div class="finder">
+      <div class="stack" style="gap:24px">
+        <div><p class="eyebrow"><span class="chk" aria-hidden="true"></span>Where would we start?</p><h2 class="big" id="h-find" style="font-size:clamp(2rem,5vw,3.6rem)">Tell Alex what hurts</h2></div>
+        <p class="lede">Pick what sounds like your business. Alex shows which service fits first.</p>
+        <div class="tags" id="finderChips" role="group" aria-label="What sounds like your business"></div>
+      </div>
+      <div class="finder-out" id="finderOut" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-how" data-tip="We map the business first. Then we build." data-mood="work">
+    <div class="head"><div><p class="eyebrow"><span class="chk" aria-hidden="true"></span>How we work</p><h2 class="big" id="h-how">Four steps</h2></div></div>
+    <div class="pipe" id="pipe" role="tablist" aria-label="Our four steps"></div>
+    <div class="pipe-body" id="pipeBody" aria-live="polite"></div>
+  </section>
+
+  <section aria-labelledby="h-res" data-tip="Four numbers we are proud of." data-mood="proud">
+    <div class="head"><div><p class="eyebrow"><span class="chk" aria-hidden="true"></span>Results</p><h2 class="big" id="h-res">Built for results</h2></div><a class="link" href="#results">All results</a></div>
+    <div class="stats" id="homeStats"></div>
+  </section>
+
+  <section aria-labelledby="h-watch" data-tip="Press play. This is a recreated call, not a real client." data-mood="listen">
+    <div class="head"><div><p class="eyebrow"><span class="chk" aria-hidden="true"></span>Watch</p><h2 class="big" id="h-watch">See it in action</h2></div></div>
+    <div class="demo" id="demo">
+      <div class="demo-side">
+        <p class="lede" style="font-size:16px">Three short conversations, replayed. Pick one and watch Alex handle it.</p>
+        <div class="scen" id="scen"></div>
+        <p class="fine">Recreated conversation. Not a real client call.</p>
+      </div>
+      <div class="demo-main">
+        <div class="demo-bar"><span class="lbl" id="demoTitle">Recreated conversation</span><div class="wave" id="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="chat" id="chat" role="log" aria-live="polite"></div>
+        <div class="demo-foot"><button class="btn" id="replay" type="button">Replay</button><canvas id="demo-alex" width="60" height="60" style="width:60px;height:60px" aria-hidden="true"></canvas></div>
+      </div>
+    </div>
+    <div class="note" id="outboundNote" hidden style="margin-top:14px"></div>
+  </section>
+
+  <section aria-labelledby="h-faq" data-tip="Questions? The call is free and takes {{booking.discovery_minutes}} minutes." data-mood="think">
+    <div class="two">
+      <div class="stack" style="gap:28px">
+        <div><p class="eyebrow"><span class="chk" aria-hidden="true"></span>Good to know</p><h2 class="big" id="h-faq" style="font-size:clamp(2rem,5vw,3.6rem)">Questions, answered</h2></div>
+        <div><p class="lbl" style="color:var(--muted);margin-bottom:14px">Industries we work with</p><div class="tags" id="industries"></div></div>
+        <div><p class="lbl" style="color:var(--muted);margin-bottom:14px">Technology we use</p><div class="tags" id="tech"></div></div>
+      </div>
+      <div class="faq" id="faqHome"></div>
+    </div>
+  </section>
+
+  <section class="final" aria-labelledby="h-final" data-tip="Ready when you are." data-mood="excited">
+    <div class="final-copy">
+      <p class="eyebrow" style="margin:0"><span class="chk" aria-hidden="true"></span>Next step</p>
+      <h2 class="big" id="h-final">Ready to build your growth system?</h2>
+      <p class="lede">A free {{booking.discovery_minutes}} minute call about what you want to build. No sales script.</p>
+      <a class="btn solid xl" href="#start" data-track="cta_click_path_a" data-wake="foot">Book a Free Discovery Call</a>
+    </div>
+    <canvas class="chara" id="foot-alex" role="img" aria-label="Alex, asleep. Hover or tap to wake him."></canvas>
+  </section>
+</div>
+
+<!-- SERVICES -->
+<div class="view" data-view="services" data-title="Services | Insiders Media" hidden>
+  <div class="page-top">
+    <p class="eyebrow"><span class="chk" aria-hidden="true"></span>What we build</p>
+    <h1 class="big" id="h1-services" tabindex="-1">Our services</h1>
+    <p class="lede">Five services, built by one team. Start with the one that fixes your biggest problem. They connect when you are ready for more.</p>
+  </div>
+  <nav class="subnav" id="subnav" aria-label="Services"></nav>
+  <div class="stack" id="svcList" style="gap:clamp(40px,6vw,72px)"></div>
+  <section class="final" aria-labelledby="h-final-s" data-tip="Every service starts in the same place: a free call." data-mood="happy">
+    <div class="final-copy">
+      <h2 class="big" id="h-final-s">Start with a conversation</h2>
+      <p class="lede">Tell us what you want to build. We reply with a clear next step.</p>
+      <a class="btn solid xl" href="#start" data-track="cta_click_path_a">Book a Free Discovery Call</a>
+    </div>
+    <canvas class="chara" id="svc-alex" role="img" aria-label="Alex, waiting"></canvas>
+  </section>
+</div>
+
+<!-- RESULTS -->
+<div class="view" data-view="results" data-title="Results | Insiders Media" hidden>
+  <div class="page-top">
+    <p class="eyebrow"><span class="chk" aria-hidden="true"></span>Results</p>
+    <h1 class="big" id="h1-results" tabindex="-1">Results we track</h1>
+    <p class="lede">Every project is measured against numbers set at the start. These are the figures we watch.</p>
+  </div>
+  <section data-tip="These are the headline numbers across our work." data-mood="idle">
+    <div class="stats" id="resStats"></div>
+  </section>
+  <section data-needs="testimonials" aria-labelledby="h-rq">
+    <div class="head"><div><p class="eyebrow"><span class="chk" aria-hidden="true"></span>Testimonials</p><h2 class="big" id="h-rq" style="font-size:clamp(2rem,5vw,3.6rem)">What clients say</h2></div></div>
+    <div class="filters" id="qFilters" role="group" aria-label="Filter by service"></div>
+    <div class="quotes" id="resQuotes"></div>
+  </section>
+  <section data-needs="video_testimonials" aria-labelledby="h-rv">
+    <div class="head"><div><p class="eyebrow"><span class="chk" aria-hidden="true"></span>Client stories</p><h2 class="big" id="h-rv" style="font-size:clamp(2rem,5vw,3.6rem)">{{proof.title}}</h2><p class="lede" style="margin-top:16px">{{proof.sub}}</p></div></div>
+    <div class="vids" data-videos data-vcta></div>
+  </section>
+  <section class="final" aria-labelledby="h-final-r" data-tip="Want numbers like these? Start with the free call." data-mood="proud">
+    <div class="final-copy">
+      <h2 class="big" id="h-final-r">Let's work on yours</h2>
+      <a class="btn solid xl" href="#start" data-track="cta_click_path_a">Book a Free Discovery Call</a>
+    </div>
+    <canvas class="chara" id="res-alex" role="img" aria-label="Alex, pleased"></canvas>
+  </section>
+</div>
+
+<!-- ABOUT -->
+<div class="view" data-view="about" data-title="About | Insiders Media" hidden>
+  <div class="page-top">
+    <p class="eyebrow"><span class="chk" aria-hidden="true"></span>About</p>
+    <h1 class="big" id="h1-about" tabindex="-1">We think in systems, not services</h1>
+    <p class="lede">Behavioral psychology, AI engineering and performance marketing, under one roof. We design how your business runs, then build it.</p>
+  </div>
+  <section class="pill3" data-tip="Three disciplines, one team." data-mood="idle">
+    <div class="card"><p class="lbl" style="color:var(--muted)">Discipline</p><h3>Behavioral psychology</h3><p>We start with how people decide, respond and buy. Every system is built around that.</p></div>
+    <div class="card"><p class="lbl" style="color:var(--muted)">Discipline</p><h3>AI engineering</h3><p>Voice agents, automation and software, built in-house and connected to your tools.</p></div>
+    <div class="card"><p class="lbl" style="color:var(--muted)">Discipline</p><h3>Performance marketing</h3><p>Campaigns measured on leads and revenue, not clicks.</p></div>
+  </section>
+  <section aria-labelledby="h-meth" data-tip="Same four steps on every project." data-mood="work">
+    <div class="head"><div><p class="eyebrow"><span class="chk" aria-hidden="true"></span>Methodology</p><h2 class="big" id="h-meth" style="font-size:clamp(2rem,5vw,3.6rem)">Four phases</h2></div></div>
+    <div class="split">
+      <div class="split-l">
+        <h2 class="h2">Built for results, not retainers</h2>
+        <p style="color:var(--soft);max-width:44ch">We scope work against outcomes you can measure. When a system runs on its own, we move on to the next one.</p>
+      </div>
+      <div class="split-r" id="methodRows"></div>
+    </div>
+  </section>
+  <section data-tip="The person behind the work." data-mood="idle">
+    <div class="two">
+      <div class="photo" id="founderPhoto" role="img" aria-label="Adil Nazir, founder"></div>
+      <div class="stack" style="gap:24px">
+        <div><p class="eyebrow"><span class="chk" aria-hidden="true"></span>Founder</p><h2 class="big" style="font-size:clamp(2rem,5vw,3.6rem)">Adil Nazir</h2></div>
+        <p class="lede">Adil founded Insiders Media to give owners one team that understands people, software and ads. He trained in clinical psychology and now builds AI systems around how customers actually behave.</p>
+        <p class="lede">He has consulted {{brand.businesses_consulted}} businesses since {{brand.consulting_since}}, across the US, UK, Canada and Europe.</p>
+        <ul class="facts">
+          <li><span>Based in</span><span>{{brand.location}}</span></li>
+          <li><span>Education</span><span>BS Clinical Psychology</span></li>
+          <li><span>Certified</span><span>Meta Blueprint, Google AI-Powered Shopping Ads</span></li>
+          <li><span>Certified</span><span>DeepLearning.AI: AI Voice Agents for Production, Agent Communication Protocol</span></li>
+          <li><span>Clients served</span><span>{{brand.businesses_consulted}} businesses</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="final" aria-labelledby="h-final-a" data-tip="Let's talk about your project." data-mood="excited">
+    <div class="final-copy">
+      <h2 class="big" id="h-final-a">Let's build your system</h2>
+      <a class="btn solid xl" href="#start" data-track="cta_click_path_a">Book a Free Discovery Call</a>
+    </div>
+    <canvas class="chara" id="about-alex" role="img" aria-label="Alex, waving"></canvas>
+  </section>
+</div>
+
+<!-- CONTACT -->
+<div class="view" data-view="contact" data-title="Contact | Insiders Media" hidden>
+  <div class="page-top">
+    <p class="eyebrow"><span class="chk" aria-hidden="true"></span>Contact</p>
+    <h1 class="big" id="h1-contact" tabindex="-1">Talk to us</h1>
+    <p class="lede">We reply within {{booking.reply_hours}} business hours during working hours.</p>
+  </div>
+  <section class="contact-grid" data-tip="Fastest route: book the free call." data-mood="idle">
+    <div class="panel paper">
+      <p class="eyebrow" style="margin:0"><span class="chk dark" aria-hidden="true"></span>Free Discovery Call</p>
+      <h2 class="h2">{{booking.discovery_minutes}} minutes about your project</h2>
+      <p>No payment, no deposit, no sales script. Share a short brief first, then choose a time.</p>
+      <a class="btn on-paper solid xl" href="#start" data-track="cta_click_path_a" style="align-self:flex-start">Book a Free Discovery Call</a>
+      <a class="btn on-paper" id="calLink" href="#start" target="_blank" rel="noopener" hidden style="align-self:flex-start">Open the calendar</a>
+    </div>
+    <div class="panel">
+      <div class="kv"><span class="lbl">Email</span><a href="mailto:{{brand.email}}" id="mailLink">{{brand.email}}</a></div>
+      <div class="kv"><span class="lbl">WhatsApp</span><a href="https://wa.me/{{brand.whatsapp}}" target="_blank" rel="noopener">{{brand.phone_display}}</a></div>
+      <div class="kv"><span class="lbl">Availability</span><b id="avail">Mon to Fri</b><span class="fine" id="availTz"></span></div>
+      <div class="kv"><span class="lbl">Reply time</span><b>Within {{booking.reply_hours}} business hours</b></div>
+      <button class="btn" id="copyMail" type="button" style="align-self:flex-start">Copy email</button>
+    </div>
+  </section>
+</div>
+
+<!-- START -->
+<!-- BOOK: DISCOVERY (free) -->
+<div class="view" data-view="start" data-title="Book a Free Discovery Call | Insiders Media" hidden>
+  <div class="page-top">
+    <p class="eyebrow"><span class="chk" aria-hidden="true"></span>Free Discovery Call</p>
+    <h1 class="big" id="h1-start" tabindex="-1">Book your free discovery call</h1>
+    <p class="lede">A focused {{booking.discovery_minutes}} minute conversation about what you want to build. No sales script. No price. No deposit.</p>
+  </div>
+  <section class="flow" data-tip="Tell us where it hurts. Then pick a time." data-mood="listen">
+    <div class="flow-main" id="flow-discovery"></div>
+    <aside class="flow-side" aria-label="Your booking">
+      <canvas id="flow-alex-discovery" role="img" aria-label="Alex, listening"></canvas>
+      <div class="in">
+        <p class="lbl">Free discovery call</p>
+        <div class="sumrow"><span>Length</span><b>{{booking.discovery_minutes}} minutes</b></div>
+        <div class="sumrow"><span>Cost</span><b>Free</b></div>
+        <div class="sumrow"><span>Your time</span><b data-sum="when">Not chosen yet</b></div>
+        <p class="fine" style="text-transform:none;letter-spacing:.02em;color:var(--muted)">After you book, a confirmation and call link arrive by email.</p>
+      </div>
+    </aside>
+  </section>
+</div>
+
+<!-- BOOK: CONSULTATION (paid) -->
+<div class="view" data-view="book-consultation" data-title="Book your Consultation | Insiders Media" hidden>
+  <div class="page-top">
+    <p class="eyebrow"><span class="chk" aria-hidden="true"></span>Audit &amp; Consultation</p>
+    <h1 class="big" id="h1-bc" tabindex="-1">Reserve your consultation</h1>
+    <p class="lede">{{consultation.session_minutes}} minutes live with Adil Nazir and a written roadmap. Tell us about your business, pick a time, and your invoice follows by email.</p>
+  </div>
+  <section class="flow" data-tip="The more you tell us, the better the session." data-mood="listen">
+    <div class="flow-main" id="flow-consultation"></div>
+    <aside class="flow-side" aria-label="Your booking">
+      <canvas id="flow-alex-consultation" role="img" aria-label="Alex, listening"></canvas>
+      <div class="in">
+        <p class="lbl">Audit &amp; Consultation</p>
+        <div class="sumrow"><span>Length</span><b>{{consultation.session_minutes}} minutes</b></div>
+        <div class="sumrow"><span>Price</span><b>{{consultation.price}} {{consultation.currency}}</b></div>
+        <div class="sumrow"><span>Your time</span><b data-sum="when">Not chosen yet</b></div>
+        <ul class="ticks side-ticks">
+          <li>Invoice by email as soon as you book</li>
+          <li>Slot held for {{consultation.hold_hours}} hours</li>
+          <li>{{consultation.price}} credited toward any build signed within {{consultation.credit_days}} days</li>
+          <li>Free reschedule or cancel up to {{consultation.cancel_hours}} hours before</li>
+        </ul>
+      </div>
+    </aside>
+  </section>
+</div>
+
+<!-- BOOKED: DISCOVERY -->
+<div class="view" data-view="booked-discovery" data-title="Discovery call booked | Insiders Media" hidden>
+  <div class="page-top">
+    <p class="eyebrow"><span class="chk" aria-hidden="true"></span>Booked</p>
+    <h1 class="big" id="h1-bd" tabindex="-1">Your discovery call has been booked</h1>
+  </div>
+  <section class="conf" data-tip="You are on the calendar." data-mood="celebrate">
+    <div class="conf-main">
+      <p class="lbl">Your call</p>
+      <p class="when" data-b="when"></p>
+      <p class="lbl" data-b="whenpk" hidden></p>
+      <p class="lede">A confirmation is on its way to <b data-b="email" style="color:var(--fg);font-weight:400"></b>. Reference <span class="mono" data-b="ref" style="color:var(--fg)"></span>.</p>
+      <div class="cta-row"><a class="btn solid xl" data-b="gcal" href="#home" target="_blank" rel="noopener">Add to Google Calendar</a><a class="link" href="#home">Back to home</a></div>
+      <p class="preview-note" data-b="preview" hidden>Preview mode. This booking was saved in this browser only. No email was sent and the team was not notified. Connect the booking endpoint in site.config.json to go live.</p>
+    </div>
+    <div class="conf-side">
+      <canvas id="conf-alex-d" role="img" aria-label="Alex, celebrating"></canvas>
+      <ol class="nextlist">
+        <li><span class="lbl">Before the call</span><p>We read your answers, so we skip the basics and start on your real problem.</p></li>
+        <li><span class="lbl">On the call</span><p>{{booking.discovery_minutes}} minutes. We ask about your bottleneck and your goal, then tell you plainly what we would build.</p></li>
+        <li><span class="lbl">After the call</span><p>You get a clear next step, whether or not we work together.</p></li>
+      </ol>
+    </div>
+  </section>
+</div>
+
+<!-- BOOKED: CONSULTATION -->
+<div class="view" data-view="booked-consultation" data-title="Consultation booked | Insiders Media" hidden>
+  <div class="page-top">
+    <p class="eyebrow"><span class="chk" aria-hidden="true"></span>Booked, awaiting payment</p>
+    <h1 class="big" id="h1-bcc" tabindex="-1">Your consultation has been booked</h1>
+    <p class="lede">Your invoice is on its way. Pay it and your booking is confirmed.</p>
+  </div>
+  <section class="conf" data-tip="Slot held. Pay the invoice to lock it in." data-mood="proud">
+    <div class="conf-main">
+      <p class="lbl">Your session</p>
+      <p class="when" data-b="when"></p>
+      <p class="lbl" data-b="whenpk" hidden></p>
+      <div class="hold"><span class="lbl">Slot held for</span><b data-b="hold">24:00:00</b></div>
+      <p class="lede">Your invoice for <b style="color:var(--fg);font-weight:400">{{consultation.price}} {{consultation.currency}}</b> is being sent to <b data-b="email" style="color:var(--fg);font-weight:400"></b>. Reference <span class="mono" data-b="ref" style="color:var(--fg)"></span>.</p>
+      <div class="cta-row"><a class="btn solid xl" href="mailto:{{brand.email}}">Email us about your invoice</a><a class="link" href="#home">Back to home</a></div>
+      <p class="preview-note" data-b="preview" hidden>Preview mode. This booking was saved in this browser only. No email or invoice was sent and the team was not notified. Connect the booking endpoint in site.config.json to go live.</p>
+    </div>
+    <div class="conf-side">
+      <canvas id="conf-alex-c" role="img" aria-label="Alex, proud"></canvas>
+      <ol class="nextlist">
+        <li><span class="lbl">01 Invoice</span><p>It arrives by email within moments. Check spam if you do not see it.</p></li>
+        <li><span class="lbl">02 Pay within {{consultation.hold_hours}} hours</span><p>Your booking is confirmed as soon as payment is received. If it is not paid in {{consultation.hold_hours}} hours, the slot is released.</p></li>
+        <li><span class="lbl">03 Prepare</span><p>A 10 minute intake form follows your payment, then the {{consultation.session_minutes}} minute session.</p></li>
+        <li><span class="lbl">04 Roadmap</span><p>Your written roadmap arrives within {{consultation.roadmap_days}} business days. {{consultation.price}} is credited toward any build signed within {{consultation.credit_days}} days.</p></li>
+      </ol>
+    </div>
+  </section>
+</div>
+
+<!-- CONSULTATION -->
+<div class="view" data-view="consultation" data-title="Audit and Consultation | Insiders Media" hidden>
+  <section class="ch" aria-labelledby="h1-cons" data-tip="Ninety minutes, one clear plan." data-mood="think">
+    <div>
+      <p class="eyebrow"><span class="chk" aria-hidden="true"></span>Audit &amp; Consultation</p>
+      <h1 id="h1-cons" tabindex="-1">{{consultation.session_minutes}} minutes with the founder</h1>
+      <p class="sub">Before you buy another tool, agent or ad campaign, find out where your business actually leaks time and money. You leave with a ranked plan you can act on.</p>
+      <div class="offer"><b>{{consultation.price}}</b><span>credited in full if you build with us within {{consultation.credit_days}} days</span></div>
+      <div class="cta-row">
+        <a class="btn solid xl" href="#book-consultation" data-track="cta_click_path_b">Reserve my consultation</a>
+        <a class="link" href="#start" data-track="cta_click_path_a">Prefer to talk first? Free discovery call</a>
+      </div>
+    </div>
+    <canvas class="chara" id="cons-alex" role="img" aria-label="Alex mapping a business process and finding the bottleneck"></canvas>
+  </section>
+
+  <section aria-labelledby="h-c1" data-tip="Tool first, problem second. That is the usual mistake." data-mood="suspicious">
+    <p class="eyebrow"><span class="chk" aria-hidden="true"></span>The problem</p>
+    <h2 class="state" id="h-c1">Most businesses buy the tool first. <em>Then wonder why nothing changed.</em></h2>
+    <p class="lede" style="margin-top:28px">This session reverses the order. We look at how work, leads and calls move through your business, find where they stall, and rank every AI opportunity by impact and effort. You leave knowing what to build first, and what to leave alone.</p>
+  </section>
+
+  <section aria-labelledby="h-c2" data-tip="Four blocks. No filler." data-mood="work">
+    <div class="two">
+      <div><p class="eyebrow"><span class="chk" aria-hidden="true"></span>Inside the session</p><h2 class="big" id="h-c2" style="font-size:clamp(2rem,5vw,3.6rem)">Four moves in {{consultation.session_minutes}} minutes</h2><p class="lede" style="margin-top:20px">Live, one to one, with Adil Nazir. Bring your real numbers and your real bottlenecks.</p></div>
+      <ol class="agx" id="agenda"></ol>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-c3" data-tip="One document. Six answers." data-mood="proud">
+    <div class="head"><div><p class="eyebrow"><span class="chk" aria-hidden="true"></span>What you take home</p><h2 class="big" id="h-c3" style="font-size:clamp(2rem,5vw,3.6rem)">A written roadmap, not a pitch deck</h2></div></div>
+    <div class="sheet" role="group" aria-label="Preview of the roadmap document">
+      <div class="sheet-h"><span class="lbl">Insiders Media &middot; AI Roadmap</span><span class="lbl">Prepared for your business</span></div>
+      <ol id="sheet"></ol>
+      <div class="sheet-f"><span class="lbl">Delivered within {{consultation.roadmap_days}} business days</span><span class="lbl">Vendor-neutral</span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-c4" data-tip="An honest filter. Better for both of us." data-mood="curious">
+    <div class="head"><div><p class="eyebrow"><span class="chk" aria-hidden="true"></span>Is this for you</p><h2 class="big" id="h-c4" style="font-size:clamp(2rem,5vw,3.6rem)">Who it helps, and who it does not</h2></div></div>
+    <div class="fit">
+      <div class="yes"><h3 class="lbl">A good fit if</h3><ul>
+        <li>You know AI matters but not where to start.</li>
+        <li>You bought tools that never stuck and want to know why.</li>
+        <li>You are comparing agencies and want an independent view first.</li>
+        <li>Calls go unanswered, follow-up slips or the same task is done by hand every week.</li>
+      </ul></div>
+      <div class="no"><h3 class="lbl">Not the right fit if</h3><ul>
+        <li>You want a fixed quote without discussing how you work.</li>
+        <li>You already know exactly what to build and need a developer.</li>
+        <li>You are looking for a free proposal. For that, start with the <a href="#start" class="link">free discovery call</a>.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-c5" data-tip="You speak with the founder." data-mood="happy">
+    <div class="two">
+      <div class="photo" id="consPhoto" role="img" aria-label="Adil Nazir, founder" style="max-width:300px"></div>
+      <div class="stack" style="gap:20px">
+        <div><p class="eyebrow"><span class="chk" aria-hidden="true"></span>Your consultant</p><h2 class="big" id="h-c5" style="font-size:clamp(2rem,5vw,3.6rem)">You speak with Adil. Not a sales rep.</h2></div>
+        <p class="lede">Adil combines behavioral psychology with AI engineering. He has consulted {{brand.businesses_consulted}} businesses since {{brand.consulting_since}}.</p>
+        <p class="lede">He will tell you what to build, in what order, and what to skip, even when the answer is not to hire us.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cons-book" aria-labelledby="h-c6" data-tip="Credited in full if you build with us." data-mood="excited">
+    <div class="offerx">
+      <div><p class="eyebrow"><span class="chk" aria-hidden="true"></span>The price</p><div class="amt" id="h-c6">{{consultation.price}}</div><p class="lbl" style="margin-top:14px">{{consultation.currency}} &middot; one session &middot; one roadmap</p></div>
+      <div class="stack" style="gap:22px">
+        <ul class="ticks" id="priceList"></ul>
+        <p class="honest-d">If AI is not the right answer for part of your business, the session will say so.</p>
+        <div class="cta-row"><a class="btn solid xl" href="#book-consultation" data-track="cta_click_path_b">Reserve my consultation</a><a class="link" href="#results">See client results</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-c7" data-tip="Book, pay, prepare, meet, receive." data-mood="work">
+    <div class="head"><div><p class="eyebrow"><span class="chk" aria-hidden="true"></span>How booking works</p><h2 class="big" id="h-c7" style="font-size:clamp(2rem,5vw,3.6rem)">Five simple steps</h2></div></div>
+    <ol class="flowline">
+      <li><span class="lbl">01 Book</span><p>Pick a time and share your business details.</p></li>
+      <li><span class="lbl">02 Invoice</span><p>It lands in your inbox within moments. Your slot is held for {{consultation.hold_hours}} hours.</p></li>
+      <li><span class="lbl">03 Pay</span><p>Payment confirms the booking.</p></li>
+      <li><span class="lbl">04 Meet</span><p>A 10 minute intake form, then the {{consultation.session_minutes}} minute live session.</p></li>
+      <li><span class="lbl">05 Receive</span><p>Your written roadmap within {{consultation.roadmap_days}} business days.</p></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-c8" data-tip="Ask anything. The answers are here." data-mood="think">
+    <div class="two">
+      <div><p class="eyebrow"><span class="chk" aria-hidden="true"></span>FAQ</p><h2 class="big" id="h-c8" style="font-size:clamp(2rem,5vw,3.6rem)">Before you book</h2></div>
+      <div class="faq" id="faqCons"></div>
+    </div>
+  </section>
+
+  <section class="final" aria-labelledby="h-final-c" data-tip="Ready when you are." data-mood="excited">
+    <div class="final-copy">
+      <h2 class="big" id="h-final-c">Know where AI pays off</h2>
+      <a class="btn solid xl" href="#book-consultation" data-track="cta_click_path_b">Reserve my consultation</a>
+    </div>
+    <canvas class="chara" id="cons-foot" role="img" aria-label="Alex, ready"></canvas>
+  </section>
+</div>
+
+<!-- LEGAL -->
+<div class="view" data-view="privacy" data-title="Privacy Policy | Insiders Media" hidden>
+  <div class="legal">
+    <p class="eyebrow"><span class="chk" aria-hidden="true"></span>Legal</p>
+    <h1 class="big" id="h1-privacy" tabindex="-1" style="font-size:clamp(2rem,5vw,3.6rem)">Privacy policy</h1>
+    <p class="fine">Last updated October 2026</p>
+    <p>Insiders Media ("we", "us") respects your privacy. This policy explains what we collect when you use this website and why.</p>
+    <h2>What we collect</h2>
+    <ul><li>Details you send us: name, email, company, website, project notes, phone or WhatsApp number.</li><li>Booking details you give our scheduling provider when you book a call.</li><li>Basic technical data such as pages visited, referrer and campaign tags (UTM values), which we store with your enquiry.</li></ul>
+    <h2>How we use it</h2>
+    <p>We use your details to reply to you, schedule and run calls, send confirmations and invoices, and understand which channels bring us enquiries. We do not sell your data.</p>
+    <h2>Analytics and cookies</h2>
+    <p>Non-essential cookies and analytics load only after you accept them in the cookie banner. See the cookie policy for details.</p>
+    <h2>Who sees your data</h2>
+    <p>Our team and the service providers we use to run the business, such as scheduling, email, spreadsheets or CRM and automation tools. They process data on our behalf.</p>
+    <h2>Your rights</h2>
+    <p>You can ask us to access, correct or delete your data at any time. Email {{brand.email}}. If you are in the UK or EU you may also have rights under data protection law.</p>
+    <h2>Contact</h2>
+    <p>{{brand.email}}</p>
+  </div>
+</div>
+<div class="view" data-view="terms" data-title="Terms | Insiders Media" hidden>
+  <div class="legal">
+    <p class="eyebrow"><span class="chk" aria-hidden="true"></span>Legal</p>
+    <h1 class="big" id="h1-terms" tabindex="-1" style="font-size:clamp(2rem,5vw,3.6rem)">Terms of use</h1>
+    <p class="fine">Last updated October 2026</p>
+    <p>By using this website you agree to these terms.</p>
+    <h2>Our services</h2>
+    <p>This website describes the services Insiders Media offers. Descriptions are not a contract. Work begins only under a written proposal or agreement that we both accept.</p>
+    <h2>Free Discovery Call</h2>
+    <p>The Discovery Call is free. It does not create an obligation for you or for us.</p>
+    <h2>Content</h2>
+    <p>All text, design and code on this site belong to Insiders Media unless stated otherwise. You may not copy or resell them without permission.</p>
+    <h2>Results</h2>
+    <p>Figures and testimonials describe past client work. Results depend on the business, market and scope, and we cannot promise the same outcome for every project.</p>
+    <h2>Liability</h2>
+    <p>We provide this website as is. To the extent the law allows, we are not liable for losses from using it.</p>
+    <h2>Contact</h2>
+    <p>{{brand.email}}</p>
+  </div>
+</div>
+<div class="view" data-view="cookies" data-title="Cookie Policy | Insiders Media" hidden>
+  <div class="legal">
+    <p class="eyebrow"><span class="chk" aria-hidden="true"></span>Legal</p>
+    <h1 class="big" id="h1-cookies" tabindex="-1" style="font-size:clamp(2rem,5vw,3.6rem)">Cookie policy</h1>
+    <p class="fine">Last updated October 2026</p>
+    <p>Cookies are small files a website stores in your browser.</p>
+    <h2>Essential</h2>
+    <p>We store your cookie choice so the banner does not reappear. This is essential and always on.</p>
+    <h2>Analytics and advertising</h2>
+    <p>With your consent we may load analytics and advertising tools to see which content works and which channels bring enquiries. If you decline, they do not load.</p>
+    <h2>Change your choice</h2>
+    <p>Clear this site's data in your browser to see the banner again, or email {{brand.email}}.</p>
+  </div>
+</div>
+
+<div class="view" data-view="notfound" data-title="Page not found | Insiders Media" hidden>
+  <div class="page-top">
+    <p class="eyebrow"><span class="chk" aria-hidden="true"></span>404</p>
+    <h1 class="big" id="h1-404" tabindex="-1">Page not found</h1>
+    <p class="lede">That page does not exist. Alex looked everywhere.</p>
+    <div><a class="btn solid" href="#home">Back to home</a></div>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="foot">
+    <div>
+      <img src="/assets/img/logo-white.png" alt="Insiders Media" width="110" height="34">
+      <p>{{brand.tagline}} {{brand.descriptor}}</p>
+    </div>
+    <div><h4>Services</h4><div class="foot-links" id="footSvc"></div></div>
+    <div><h4>Company</h4><div class="foot-links"><a href="#about">About</a><a href="#results">Results</a><a href="#contact">Contact</a><a href="#start">Start a project</a></div></div>
+    <div><h4>Connect</h4><div class="foot-links" id="footSoc"><a href="mailto:{{brand.email}}" style="text-transform:none;letter-spacing:.02em;font-size:13px">{{brand.email}}</a></div></div>
+  </div>
+  <div class="legal-bar">
+    <span class="fine">&copy; <span id="yr"></span> Insiders Media</span>
+    <span style="display:flex;gap:20px;flex-wrap:wrap"><a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="#cookies">Cookies</a><a href="#consultation" id="consLink" hidden>Audit &amp; Consultation</a></span>
+  </div>
+</footer>
+
+<aside class="dock" id="dock" aria-live="polite" hidden>
+  <p class="bubble" id="bubble">Hi, I am Alex.</p>
+  <canvas id="dock-alex" aria-hidden="true"></canvas>
+</aside>
+
+<div class="cookie" id="cookie" role="region" aria-label="Cookie consent" hidden>
+  <span>We use essential cookies. Analytics and advertising cookies load only if you accept.</span>
+  <div class="row"><button class="btn solid" type="button" id="ckYes">Accept</button><button class="btn" type="button" id="ckNo">Decline</button><a class="link" href="#cookies" style="align-self:center">Details</a></div>
+</div>
+
+<div class="modal" id="vmodal" role="dialog" aria-modal="true" aria-label="Video" hidden>
+  <div class="modal-in" id="vbox"><button class="btn modal-x" type="button" id="vclose">Close</button></div>
+</div>
+
+<script src="/assets/js/site.config.js"></script>
+<script src="/assets/js/app.js"></script>
+</body>
+</html>
