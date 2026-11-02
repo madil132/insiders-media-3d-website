@@ -91,3 +91,4 @@ Open http://localhost:3000. Emails are printed instead of sent and bookings are 
 
 Open your GitHub repository main page. These must be listed at the TOP level: `api`, `public`, `scripts`, `package.json`, `vercel.json`, `site.config.json`.
 If you instead see one folder (for example `insiders-media`) containing them, either move the contents up one level, or in Vercel go to Settings > General > Root Directory and enter that folder name, then redeploy.
+.
